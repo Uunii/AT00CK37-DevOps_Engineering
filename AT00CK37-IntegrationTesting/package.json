@@ -1,0 +1,33 @@
+{
+  "name": "at00ck37-3003-week39",
+  "version": "1.0.0",
+  "description": "This is a template for integration testing.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "set NODE_ENV=test&& mocha --reporter nyan",
+    "dev": "set NODE_ENV=dev&& node ./src/server.js",
+    "docs": "jsdoc -r src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petri-rantanen/AT00CK37-3003-Week39.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petri-rantanen/AT00CK37-3003-Week39/issues"
+  },
+  "homepage": "https://github.com/petri-rantanen/AT00CK37-3003-Week39#readme",
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
