@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Hex RGB Converter</h1>
+        <!-- Hex to RGB -->
+        <section class="panel">
+            <h2>Hex to RGB</h2>
+            <form id="hex-form">
+                <label for="hex-input">Hex color</label>
+                <input
+                    id="hex-input"
+                    type="text"
+                    value="#FF0000"
+                    placeholder="#FF0000"
+                    required
+                >
+                <button type="submit">Convert to RGB</button>
+            </form>
+            <p id="hex-error" class="error" role="alert"></p>
+            <p>RGB result: <strong id="rgb-result">255, 0, 0</strong></p>
+        </section>
+        <!-- RGB to Hex -->
+        <section class="panel">
+            <h2>RGB to Hex</h2>
+            <form id="rgb-form">
+                <div class="rgb-inputs">
+                    <div>
+                        <label for="red-input">Red (0–255)</label>
+                        <input id="red-input" type="number"
+                               min="0" max="255" value="255" required>
+                    </div>
+                    <div>
+                        <label for="green-input">Green (0–255)</label>
+                        <input id="green-input" type="number"
+                               min="0" max="255" value="0" required>
+                    </div>
+                    <div>
+                        <label for="blue-input">Blue (0–255)</label>
+                        <input id="blue-input" type="number"
+                               min="0" max="255" value="0" required>
+                    </div>
+                </div>
+                <button type="submit">Convert to Hex</button>
+            </form>
+            <p id="rgb-error" class="error" role="alert"></p>
+            <p>Hex result: <strong id="hex-result">#FF0000</strong></p>
+        </section>
+        <!-- Color preview -->
+        <section class="panel">
+            <h2>Color preview</h2>
+            <div id="color-preview" class="color-preview"></div>
+            <p id="preview-value">#FF0000 · RGB(255, 0, 0)</p>
+        </section>
+    </main>
+</body>
+</html>
